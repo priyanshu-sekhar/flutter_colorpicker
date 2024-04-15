@@ -9,13 +9,13 @@ import 'utils.dart';
 // The Color Picker which contains Material Design Color Palette.
 class MaterialPicker extends StatefulWidget {
   const MaterialPicker({
-    Key? key,
+    super.key,
     required this.pickerColor,
     required this.onColorChanged,
     this.onPrimaryChanged,
     this.enableLabel = false,
     this.portraitOnly = false,
-  }) : super(key: key);
+  });
 
   final Color pickerColor;
   final ValueChanged<Color> onColorChanged;

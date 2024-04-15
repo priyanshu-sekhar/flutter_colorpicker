@@ -11,7 +11,7 @@ import 'utils.dart';
 /// The default layout of Color Picker.
 class ColorPicker extends StatefulWidget {
   const ColorPicker({
-    Key? key,
+    super.key,
     required this.pickerColor,
     required this.onColorChanged,
     this.pickerHsvColor,
@@ -30,7 +30,7 @@ class ColorPicker extends StatefulWidget {
     this.hexInputController,
     this.colorHistory,
     this.onHistoryChanged,
-  }) : super(key: key);
+  });
 
   final Color pickerColor;
   final ValueChanged<Color> onColorChanged;
